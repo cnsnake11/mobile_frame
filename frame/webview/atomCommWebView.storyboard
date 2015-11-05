@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Atom Comm Web View Controller-->
+        <scene sceneID="4wo-6B-KlP">
+            <objects>
+                <viewController storyboardIdentifier="atomCommWebView" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UWE-oR-XSI" customClass="AtomCommWebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="abq-90-n57"/>
+                        <viewControllerLayoutGuide type="bottom" id="wI0-30-hoQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5nO-Ab-7ad">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CrU-pN-bDE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CrU-pN-bDE" firstAttribute="bottom" secondItem="wI0-30-hoQ" secondAttribute="bottom" id="bwZ-cR-TOn"/>
+                            <constraint firstItem="CrU-pN-bDE" firstAttribute="leading" secondItem="5nO-Ab-7ad" secondAttribute="leading" id="pEw-rP-bNM"/>
+                            <constraint firstItem="CrU-pN-bDE" firstAttribute="top" secondItem="5nO-Ab-7ad" secondAttribute="top" id="qVM-m8-beV"/>
+                            <constraint firstAttribute="trailing" secondItem="CrU-pN-bDE" secondAttribute="trailing" id="v1o-zE-QVK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="commWebView" destination="CrU-pN-bDE" id="LvZ-Lq-K5J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CKf-6c-ufp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="256" y="303"/>
+        </scene>
+    </scenes>
+</document>
