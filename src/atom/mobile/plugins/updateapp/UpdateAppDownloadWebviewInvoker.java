@@ -13,11 +13,11 @@ import android.widget.Toast;
 import atom.mobile.frame.activity.BaseWebViewActivity;
 import atom.mobile.frame.webview.invoker.EventHandler;
 import atom.mobile.frame.webview.invoker.IWebViewInvoker;
-import org.apache.http.HttpEntity;
+/*import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.DefaultHttpClient;*/
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -99,7 +99,7 @@ public class UpdateAppDownloadWebviewInvoker implements IWebViewInvoker {
      * 下载apk
      */
     private Thread thread;
-    public void downFile(final String url) {
+    public void downFile(final String url) {/*
         pd.show();
         thread= new Thread() {
             public void run() {
@@ -146,7 +146,7 @@ public class UpdateAppDownloadWebviewInvoker implements IWebViewInvoker {
                 }
             }
         };
-        thread.start();
+        thread.start();*/
     }
 
 
