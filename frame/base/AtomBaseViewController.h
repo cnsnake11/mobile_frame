@@ -10,7 +10,7 @@
 
 
   /*
-    此方法子类必须实现，否则运行时会出现错误
+    此方法子类必须实现， 否则运行时会出现错误
     获得当前控制器中的js桥对象
   */
   -(WebViewJavascriptBridge*) getBridge;
